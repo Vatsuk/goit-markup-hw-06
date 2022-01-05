@@ -361,52 +361,62 @@ rel="stylesheet"
 <div class="wrapper-modal">
     <form class="form">
     <button  type="button" data-modal-close class="close">&#10006;  </button>
-<h2 class="text-label">Оставьте свои данные, мы вам перезвоним</h2> 
-<label class="label-ab" for="name">
-    <span class="form-text">Имя</span>
-    <div class="wrapper-input">
-    <input type="text" id="name" name="name">
-    <svg class="modal-svg-icon" width="12" height="12">
-        <use href="./images/svg/icons.svg#icon-facebook"></use>
-    </svg>
+<form class="form">
+    <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+    <div>
+        <label class="form__title">
+            <span class="form__text">Имя</span>
+            <div class="container-modal-svg">
+                <input type="text" class="form__input" name="user-name" />
+                <svg class="modal-svg-icon" width="12" height="12">
+                    <use href="./images/svg/icons.svg#icon-black-man"></use>
+                </svg>
+            </div>
+        </label>
     </div>
-</label>   
-<label class="label-ab" for="name">
-    <span class="form-text">Телефон</span>
-    <div class="wrapper-input">
-        <input type="text" id="name" name="name">
-        <svg class="modal-svg-icon" width="12" height="12">
-            <use href="./images/svg/icons.svg#icon-facebook"></use>
-        </svg>
+    <div>
+        <label class="form__title">
+            <span class="form__text">Телефон</span>
+            <div class="container-modal-svg">
+                <input type="phone" class="form__input" name="user-phone" />
+                <svg class="modal-svg-icon" width="13" height="13">
+                    <use href="./images/icons.svg#icon-mobile"></use>
+                </svg>
+            </div>
+        </label>
     </div>
-</label>
-<label class="label-ab" for="name">
-    <span class="form-text">Почта</span>
-    <div class="wrapper-input">
-        <input type="text" id="name" name="name">
-        <svg class="modal-svg-icon" width="12" height="12">
-            <use href="./images/svg/icons.svg#icon-facebook"></use>
-        </svg>
-    </div>
-    <div class="wrapper-input">Комментарий
-        <textarea  name="" id="" placeholder="Введите текст" >
-        </textarea>
 
+    <div>
+        <label class="form__title">
+            <span class="form__text">Почта</span>
+            <div class="container-modal-svg">
+                <input type="email" class="form__input" name="user-email" />
+                <svg class="modal-svg-icon" width="15" height="12">
+                    <use href="./images/icons.svg#icon-black-envelope"></use>
+                </svg>
+            </div>
+        </label>
     </div>
-    <div class="checkbox">
+    <div>
+        <label class="form__title">
+            <span class="form__text">Комментарий</span>
+            <textarea name="user-message" class="form__textarea" placeholder="Введите текст"></textarea>
+        </label>
+    </div>
+    <div class="checkbox-container">
         <label for="checkbox" class="checkbox-text" for="checkbox">
             <input type="checkbox" name="" value="" id="checkbox" class="checkbox our-qualities" />
             <span class="checkbox-container__icon">
                 <svg class="checkbox-container__svg-icon" width="16" heigh="15">
-                    <use href="./images/icon.svg#icon-icon-check" />
+                    <use href="./images/icons.svg#icon-icon-check" />
                 </svg>
             </span>
             Соглашаюсь с рассылкой и принимаю <a href="" class="check-link"> Условия
                 договора</a>
-                </label>
-                </div>
-                <button type="submit" class="form-btn">Отправить</button>
-</label>
+        </label>
+    </div>
+    <button type="submit" class="form__btn">Отправить</button>
+
 </form>
 </div>
 </div>
